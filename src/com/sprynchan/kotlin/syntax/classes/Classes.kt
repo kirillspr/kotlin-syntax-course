@@ -2,7 +2,7 @@ package com.sprynchan.kotlin.syntax.classes
 
 import java.util.*
 
-class Customer(val id: Int, var name: String, var yearOfBirth: Int) {
+data class Customer(val id: Int, var name: String, var yearOfBirth: Int) {
 
     val age: Int
         get() = Calendar.getInstance().get(Calendar.YEAR) - yearOfBirth
